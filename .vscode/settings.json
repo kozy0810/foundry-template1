@@ -8,6 +8,7 @@
     "[solidity]": {
         "editor.defaultFormatter": "JuanBlanco.solidity"
     },
+    "solidity.formatter": "forge",
     "files.associations": {
         "*.t.sol": "solidity"
     },

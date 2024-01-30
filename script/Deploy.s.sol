@@ -14,13 +14,7 @@ contract DeployScript is Script, Base {
         uint256 deployerPrivateKey = vm.envUint("DEPLOYER_PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        Counter counter = Counter(
-            CREATE3.deploy(
-                vm.envBytes32("DEPLOY_SALT"),
-                type(Counter).creationCode,
-                0
-            )
-        );
+        Counter counter = Counter(CREATE3.deploy(vm.envBytes32("DEPLOY_SALT"), type(Counter).creationCode, 0));
         counter.name();
 
         vm.stopBroadcast();
