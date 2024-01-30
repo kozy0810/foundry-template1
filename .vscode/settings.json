@@ -1,0 +1,35 @@
+{
+    "solidity.enableLocalNodeCompiler": true,
+    "solidity.compilerType": "remote",
+    "solidity.defaultCompiler": "0.8.24",
+    "editor.formatOnSave": true,
+    "solidity.packageDefaultDependenciesContractsDirectory": "",
+    "solidity.packageDefaultDependenciesDirectory": "node_modules",
+    "[solidity]": {
+        "editor.defaultFormatter": "JuanBlanco.solidity"
+    },
+    "files.associations": {
+        "*.t.sol": "solidity"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "solidity.remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-gas-snapshot/=lib/forge-gas-snapshot/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "permit2/=lib/permit2/",
+        "solmate/=lib/solmate/",
+        "solarray/=lib/solarray/src/"
+    ],
+    "terminal.integrated.env.linux": {
+        "FOUNDRY": "/path/to/your/foundry/bin"
+    },
+    "terminal.integrated.env.osx": {
+        "FOUNDRY": "/path/to/your/foundry/bin"
+    },
+    "terminal.integrated.env.windows": {
+        "FOUNDRY": "C:\\path\\to\\your\\foundry\\bin"
+    }
+}
